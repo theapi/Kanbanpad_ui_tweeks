@@ -17,11 +17,10 @@ $(document).ready(function() {
   
   if (matches[1]) {
     avatar_id = matches[1];
+    // Move current user's avatar to top of list
+    $("#user-swatch").prepend($('#' + avatar_id));
   }
   
-  // Move current user's avatar to top of list
-  $("#user-swatch").prepend($('#' + avatar_id));
-
   // Hide the feedback button.
   //$('#feedback-button').hide();
 });
