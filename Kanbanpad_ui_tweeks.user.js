@@ -24,12 +24,13 @@ $(document).ready(function() {
   // style fixes
   var head = document.getElementsByTagName('head')[0];
   var s = document.createElement('style');
-  var css = 'body.project .kanban-column ul li .title{font-size:10px; line-height:14px; width:80%;}';
+  var css = 'body.project .kanban-column ul li .title{font-size:10px; line-height:14px; width:80%; text-align:left;}';
   css += 'body.project .kanban-column ul li .user img{height:80px; width:80px;}';
   css += 'body.project .kanban-column ul li .unassigned{display:none;}';
   css += 'body.project .kanban-column ul li{min-height:15px;}';
   css += 'body.project .kanban-column ul li p.actions{right:0; top:0; position:absolute; width:55px;}';
-  css += 'body.project .kanban-column span.asignee{margin-left:12px; float:left;}';
+  css += 'body.project .kanban-column span.asignee{margin-left:12px; float:left; margin:0;}';
+
   s.setAttribute('type', 'text/css');
   if (s.styleSheet) {   // IE
       s.styleSheet.cssText = css;
